@@ -6,15 +6,15 @@ def student_menu():
         print("\nStudent Menu:")
         print("1. View My Grades")
         print("2. View My Fees Details")
-        student_choice = input("Enter choice by student: ")
+        student_choice = int(input("Enter choice by student: "))
 
         if student_choice == '1':
-            roll_id = input("Enter your roll id: ")
+            roll_id = int(input("Enter your roll id: "))
             view_specific_student(students, roll_id)
             log_file(f"Student With Roll id {roll_id} spotted.")
         elif student_choice == '2':
-            roll_id = input("Enter your roll id: ")
-            
+            roll_id =int(input("Enter your roll id: "))
+
             view_specific_student(students, roll_id)
         else:
           print("Invalid choice!")
